@@ -153,14 +153,8 @@
 <p>No photograph or video is recorded, saved or transmitted. Only the decoded value of the scanned code is used, and it is used locally to generate the hero's statistics. You may deny or revoke the camera permission at any time in your device settings; the rest of the Application continues to work, but scanning will be unavailable.</p>
 
 <h3>Online Leaderboard</h3>
-<p>The Application includes an <strong>optional online leaderboard</strong> for boss battles, hosted on Google Firebase (Cloud Firestore) under the Service Provider's Firebase project. This is the one feature where data you provide leaves your device and is stored by the Service Provider.</p>
-<p>When you submit a result, the following is transmitted and stored:</p>
-<ul>
-<li>the <strong>display name</strong> you have chosen in the Application's settings;</li>
-<li>an <strong>anonymous account identifier</strong> created by Firebase Anonymous Authentication &mdash; it is not linked to your Google account, email address or real identity;</li>
-<li>your result for that boss (turns taken, health lost, and the rarity and power of the hero used), and the time of submission.</li>
-</ul>
-<p>Entries submitted to a leaderboard are <strong>publicly visible</strong> to other players of the Application, including the display name you choose. Please do not enter personal information, such as your real name, as a display name. Leaderboard entries are removed automatically once the boss board they belong to expires.</p>
+<p>If you submit a boss result to the optional online leaderboard, the display name you chose in settings, an anonymous identifier (not linked to your Google account, email address or real identity) and the result itself are stored in the Service Provider's Google Firebase project and shown publicly to other players. Nothing is submitted unless you choose to submit it, and entries are deleted automatically when the boss board expires.</p>
+<p>Because the board is public, please do not use your real name as a display name.</p>
 
 <h3>Purchases</h3>
 <p>The Application offers an optional one-time purchase to remove advertising, processed through Google Play Billing. Payment details are handled entirely by Google Play; the Service Provider never receives or stores your payment information.</p>
@@ -190,14 +184,14 @@
 
 <h2 id="data-retention-and-deletion">Data Retention and Deletion</h2>
 <p>Your hero collection, game saves and settings remain on your device and are deleted when you uninstall the Application.</p>
-<p>Leaderboard entries are stored in the Service Provider's Firebase project and are deleted automatically when the boss board they belong to expires. If you would like a leaderboard entry removed before then, contact the developer using the details below; because entries are keyed to an anonymous identifier, please describe the display name and board concerned so the entry can be located.</p>
+<p>Leaderboard entries expire automatically with their boss board. To have one removed sooner, contact the developer and mention the display name and board concerned.</p>
 <p>Information processed by the other third-party services listed above is retained and deleted according to their own privacy policies.</p>
 
 <h2 id="children">Children</h2>
 <p>The Application is a scanning and battling game suitable for a general audience. Because it displays advertising and offers a public leaderboard, its target audience is set to users aged 13 and older. The Service Provider does not knowingly collect personally identifiable information from children under the age of 13. If you believe a child has provided personal information, please contact us and it will be promptly addressed.</p>
 
 <h2 id="security">Security</h2>
-<p>Leaderboard data is held in Google Cloud Firestore and protected by Google's infrastructure security and by access rules restricting what the Application may read and write. It contains no contact details, payment information or precise location. All other data remains on your device, under your own device's security controls.</p>
+<p>Leaderboard data is held in Google Cloud Firestore, protected by Google's infrastructure and by access rules, and contains no contact details, payment information or location. All other data remains on your device, under your own device's security controls.</p>
 
 <h2 id="changes">Changes</h2>
 <p>This Privacy Policy may be updated from time to time. The Service Provider will notify users of any changes by updating this page, and the effective date at the top will change accordingly. Continued use of the Application after changes are posted constitutes acceptance of the revised policy.</p>
