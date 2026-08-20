@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Melodeon &amp; Makkia — Mobile Apps &amp; Privacy Policies</title>
-    <meta name="description" content="Official developer website for Melodeon &amp; Makkia. Browse our mobile games and read the privacy policy for each app.">
+    <meta name="description" content="Melodeon &amp; Makkia build logic puzzle and casual mobile games: Botanyx, Botanyx: The Garden Path, Barcode Battle, Glow Up! and Gravity Alchemy. Get them on Google Play and read each app's privacy policy.">
     <meta name="theme-color" content="#2e7d32" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#0f1512" media="(prefers-color-scheme: dark)">
     <link rel="canonical" href="https://makkia.github.io/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Melodeon &amp; Makkia">
     <meta property="og:title" content="Melodeon &amp; Makkia — Mobile Apps &amp; Privacy Policies">
-    <meta property="og:description" content="Official developer website for Melodeon &amp; Makkia. Browse our mobile games and read the privacy policy for each app.">
+    <meta property="og:description" content="Logic puzzle and casual mobile games for Android — get them on Google Play and read each app's privacy policy.">
     <meta property="og:url" content="https://makkia.github.io/">
     <meta name="twitter:card" content="summary">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232e7d32'/><text x='16' y='23' font-size='19' font-family='system-ui,sans-serif' font-weight='700' text-anchor='middle' fill='white'>M</text></svg>">
@@ -108,9 +108,9 @@
 
         .app-item {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             gap: 16px;
-            padding: 16px;
+            padding: 18px;
             border: 1px solid var(--border);
             border-radius: 12px;
             background: var(--surface);
@@ -151,9 +151,67 @@
         }
 
         .app-meta {
-            margin: 2px 0 0;
+            margin: 4px 0 0;
             font-size: .875rem;
             color: var(--muted);
+        }
+
+        .badge {
+            display: inline-block;
+            margin-left: 8px;
+            padding: 2px 8px;
+            border-radius: 999px;
+            background: var(--chip-bg);
+            color: var(--muted);
+            font-size: .7rem;
+            font-weight: 700;
+            letter-spacing: .06em;
+            text-transform: uppercase;
+            vertical-align: 2px;
+        }
+
+        .actions {
+            flex: 0 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            gap: 8px;
+        }
+
+        .store-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 7px;
+            padding: 9px 16px;
+            border-radius: 999px;
+            background: var(--brand);
+            color: var(--brand-ink);
+            font-size: .875rem;
+            font-weight: 600;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .store-link:hover,
+        .store-link:focus-visible {
+            filter: brightness(1.08);
+            text-decoration: none;
+        }
+
+        .store-link svg { width: 15px; height: 15px; flex: 0 0 auto; }
+
+        .soon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 9px 16px;
+            border: 1px dashed var(--border);
+            border-radius: 999px;
+            font-size: .875rem;
+            font-weight: 600;
+            color: var(--muted);
+            white-space: nowrap;
         }
 
         .policy-link {
@@ -205,11 +263,10 @@
                 display: grid;
                 grid-template-columns: auto 1fr;
                 gap: 12px 14px;
-                align-items: center;
+                align-items: start;
             }
-            .policy-link {
+            .actions {
                 grid-column: 1 / -1;
-                justify-content: center;
             }
         }
 
@@ -224,7 +281,7 @@
         <header>
             <div class="logo" aria-hidden="true">M</div>
             <h1>Melodeon &amp; Makkia</h1>
-            <p class="tagline">Official mobile app developer website.</p>
+            <p class="tagline">We make logic puzzle and casual games for Android.</p>
         </header>
 
         <main>
@@ -234,60 +291,63 @@
                     <div class="app-icon" aria-hidden="true">B</div>
                     <div class="app-text">
                         <h3>Botanyx: Star Battle Puzzles</h3>
-                        <p class="app-meta">Logic puzzle game</p>
+                        <p class="app-meta">Relaxing Star Battle logic puzzles: one plant per row, column and colored garden bed, never touching. Infinite unique boards, a worldwide daily challenge with streak rewards, and a collection of vegetables and flowers grown purely by playing.</p>
                     </div>
-                    <a class="policy-link" href="privacy-policy-botanyx.html" target="_blank" rel="noopener">
-                        Privacy Policy
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-                    </a>
+                    <div class="actions">
+                        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.melodeon.botanyx" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 1.9a1.3 1.3 0 0 0-.5 1.05v18.1c0 .43.2.82.53 1.04l10.2-10.1L3.6 1.9Z"/><path d="M17.9 8.35 5.55 1.3 15.2 10.9l2.7-2.55Z"/><path d="M21.3 11.05 18.8 9.6l-2.9 2.75 2.9 2.87 2.53-1.44a1.3 1.3 0 0 0 0-2.73Z"/><path d="M5.6 22.68 17.93 15.6l-2.72-2.7L5.6 22.68Z"/></svg>Google Play</a>
+                        <a class="policy-link" href="privacy-policy-botanyx.html" target="_blank" rel="noopener">Privacy Policy<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+                    </div>
                 </li>
 
                 <li class="app-item">
                     <div class="app-icon" aria-hidden="true">G</div>
                     <div class="app-text">
                         <h3>Glow Up! Kids Makeover Game</h3>
-                        <p class="app-meta">Creative game for kids</p>
+                        <p class="app-meta">A playful makeover game for kids: clean your character up in a bubbly minigame, then dress her up and paint on makeup, and save every look to your lookbook.</p>
                     </div>
-                    <a class="policy-link" href="privacy-policy-glowup.html" target="_blank" rel="noopener">
-                        Privacy Policy
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-                    </a>
+                    <div class="actions">
+                        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.melodeon.glow_up" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 1.9a1.3 1.3 0 0 0-.5 1.05v18.1c0 .43.2.82.53 1.04l10.2-10.1L3.6 1.9Z"/><path d="M17.9 8.35 5.55 1.3 15.2 10.9l2.7-2.55Z"/><path d="M21.3 11.05 18.8 9.6l-2.9 2.75 2.9 2.87 2.53-1.44a1.3 1.3 0 0 0 0-2.73Z"/><path d="M5.6 22.68 17.93 15.6l-2.72-2.7L5.6 22.68Z"/></svg>Google Play</a>
+                        <a class="policy-link" href="privacy-policy-glowup.html" target="_blank" rel="noopener">Privacy Policy<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+                    </div>
                 </li>
 
                 <li class="app-item">
                     <div class="app-icon" aria-hidden="true">B</div>
                     <div class="app-text">
                         <h3>Barcode Battle</h3>
-                        <p class="app-meta">Logic puzzle game</p>
+                        <p class="app-meta">Scan any barcode or QR code to summon a unique hero, then battle for glory. Every code in the real world turns into a different fighter.</p>
                     </div>
-                    <a class="policy-link" href="privacy-policy-barcodebattle.html" target="_blank" rel="noopener">
-                        Privacy Policy
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-                    </a>
+                    <div class="actions">
+                        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.melodeon.barcodebattle" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 1.9a1.3 1.3 0 0 0-.5 1.05v18.1c0 .43.2.82.53 1.04l10.2-10.1L3.6 1.9Z"/><path d="M17.9 8.35 5.55 1.3 15.2 10.9l2.7-2.55Z"/><path d="M21.3 11.05 18.8 9.6l-2.9 2.75 2.9 2.87 2.53-1.44a1.3 1.3 0 0 0 0-2.73Z"/><path d="M5.6 22.68 17.93 15.6l-2.72-2.7L5.6 22.68Z"/></svg>Google Play</a>
+                        <a class="policy-link" href="privacy-policy-barcodebattle.html" target="_blank" rel="noopener">Privacy Policy<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+                    </div>
                 </li>
 
                 <li class="app-item">
                     <div class="app-icon" aria-hidden="true">B</div>
                     <div class="app-text">
                         <h3>Botanyx: The Garden Path</h3>
-                        <p class="app-meta">Logic puzzle game</p>
+                        <p class="app-meta">Cozy logic puzzles across seasonal gardens: one plant per row, column and bed. The same deduction Botanyx is built on, wrapped in a gentler, journey-shaped progression.</p>
                     </div>
-                    <a class="policy-link" href="privacy-policy-botanyx-path.html" target="_blank" rel="noopener">
-                        Privacy Policy
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-                    </a>
+                    <div class="actions">
+                        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.melodeon.botanyx_path" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 1.9a1.3 1.3 0 0 0-.5 1.05v18.1c0 .43.2.82.53 1.04l10.2-10.1L3.6 1.9Z"/><path d="M17.9 8.35 5.55 1.3 15.2 10.9l2.7-2.55Z"/><path d="M21.3 11.05 18.8 9.6l-2.9 2.75 2.9 2.87 2.53-1.44a1.3 1.3 0 0 0 0-2.73Z"/><path d="M5.6 22.68 17.93 15.6l-2.72-2.7L5.6 22.68Z"/></svg>Google Play</a>
+                        <a class="policy-link" href="privacy-policy-botanyx-path.html" target="_blank" rel="noopener">Privacy Policy<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+                    </div>
                 </li>
 
                 <li class="app-item">
                     <div class="app-icon" aria-hidden="true">G</div>
                     <div class="app-text">
-                        <h3>Gravity Alchemy</h3>
-                        <p class="app-meta">Logic puzzle game</p>
+                        <h3>Gravity Alchemy: Merge Drop</h3>
+                        <p class="app-meta">A real-physics merge puzzle: drop pieces, let them collide and merge, and climb five alchemy chains. Plays fully offline.</p>
                     </div>
-                    <a class="policy-link" href="privacy-policy-gravity-alchemy.html" target="_blank" rel="noopener">
-                        Privacy Policy
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg>
-                    </a>
+                    <div class="actions">
+                        <span class="soon">Coming soon</span>
+                        <!-- On release day, swap the span above for this link:
+                        <a class="store-link" href="https://play.google.com/store/apps/details?id=com.melodeon.gravity_alchemy" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.6 1.9a1.3 1.3 0 0 0-.5 1.05v18.1c0 .43.2.82.53 1.04l10.2-10.1L3.6 1.9Z"/><path d="M17.9 8.35 5.55 1.3 15.2 10.9l2.7-2.55Z"/><path d="M21.3 11.05 18.8 9.6l-2.9 2.75 2.9 2.87 2.53-1.44a1.3 1.3 0 0 0 0-2.73Z"/><path d="M5.6 22.68 17.93 15.6l-2.72-2.7L5.6 22.68Z"/></svg>Google Play</a>
+                        -->
+                        <a class="policy-link" href="privacy-policy-gravity-alchemy.html" target="_blank" rel="noopener">Privacy Policy<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></svg></a>
+                    </div>
                 </li>
             </ul>
         </main>
