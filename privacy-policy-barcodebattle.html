@@ -3,99 +3,213 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Barcode Battle</title>
+    <title>Privacy Policy &mdash; Barcode Battle</title>
+    <meta name="description" content="Privacy policy for Barcode Battle, an Android app by Melodeon &amp; Makkia.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://makkia.github.io/privacy-policy-barcodebattle.html">
+    <meta name="theme-color" content="#2e7d32" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0f1512" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232e7d32'/><text x='16' y='23' font-size='19' font-family='system-ui,sans-serif' font-weight='700' text-anchor='middle' fill='white'>M</text></svg>">
     <style>
+        :root {
+            color-scheme: light dark;
+            --bg: #f4f6f4;
+            --surface: #ffffff;
+            --border: #e3e8e3;
+            --text: #1f2421;
+            --muted: #5f6b64;
+            --brand: #2e7d32;
+            --link: #1565c0;
+            --note-bg: #eef4ef;
+            --shadow: 0 1px 2px rgba(16,24,20,.06), 0 8px 24px rgba(16,24,20,.06);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #0f1512;
+                --surface: #171e1a;
+                --border: #26302a;
+                --text: #e8eee9;
+                --muted: #9fada5;
+                --brand: #7bc47f;
+                --link: #8ab4f8;
+                --note-bg: #202a24;
+                --shadow: 0 1px 2px rgba(0,0,0,.4), 0 8px 24px rgba(0,0,0,.35);
+            }
+        }
+
+        * { box-sizing: border-box; }
+
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 750px;
-            margin: 40px auto;
-            padding: 0 24px;
-            color: #24292e;
-            background-color: #ffffff;
+            margin: 0;
+            padding: clamp(20px, 5vw, 48px) 20px;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.65;
+            background: var(--bg);
+            color: var(--text);
+            -webkit-font-smoothing: antialiased;
         }
-        h1 {
-            border-bottom: 1px solid #eaecef;
-            padding-bottom: 0.3em;
-            color: #1b1f23;
+
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: clamp(22px, 5vw, 44px);
+            box-shadow: var(--shadow);
         }
-        h2 {
-            border-bottom: 1px solid #eaecef;
-            padding-bottom: 0.3em;
-            margin-top: 24px;
-            color: #1b1f23;
-        }
-        h3 {
-            margin-top: 16px;
-            color: #24292e;
-        }
-        p {
-            margin-top: 0;
-            margin-bottom: 16px;
-        }
-        ul {
-            padding-left: 2em;
-            margin-bottom: 16px;
-        }
-        li {
-            margin-top: 0.25em;
-        }
-        a {
-            color: #0366d6;
+
+        .back {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-bottom: 22px;
+            font-size: .9rem;
+            font-weight: 600;
+            color: var(--link);
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
+
+        .back:hover { text-decoration: underline; }
+
+        h1 {
+            margin: 0 0 4px;
+            font-size: clamp(1.5rem, 4.5vw, 2rem);
+            letter-spacing: -.02em;
         }
-        strong {
-            color: #000000;
+
+        .subtitle {
+            margin: 0 0 4px;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--brand);
+        }
+
+        .updated {
+            margin: 0 0 28px;
+            font-size: .875rem;
+            color: var(--muted);
+        }
+
+        h2 {
+            margin: 34px 0 10px;
+            padding-bottom: .3em;
+            border-bottom: 1px solid var(--border);
+            font-size: 1.2rem;
+            letter-spacing: -.01em;
+        }
+
+        h3 { margin: 24px 0 8px; font-size: 1rem; }
+
+        p { margin: 0 0 14px; }
+
+        ul { margin: 0 0 16px; padding-left: 1.4em; }
+
+        li { margin-bottom: 6px; }
+
+        a { color: var(--link); }
+
+        a:focus-visible, .back:focus-visible {
+            outline: 2px solid var(--brand);
+            outline-offset: 3px;
+            border-radius: 4px;
+        }
+
+        .note {
+            margin: 0 0 16px;
+            padding: 14px 16px;
+            border-left: 3px solid var(--brand);
+            border-radius: 0 8px 8px 0;
+            background: var(--note-bg);
+        }
+
+        .note p:last-child { margin-bottom: 0; }
+
+        footer {
+            margin-top: 36px;
+            padding-top: 18px;
+            border-top: 1px solid var(--border);
+            font-size: .875rem;
+            color: var(--muted);
         }
     </style>
 </head>
 <body>
-
-<h1 id="privacy-policy">Privacy Policy</h1>
-<p>This privacy policy applies to the <strong>Barcode Battle</strong> app (hereby referred to as &quot;Application&quot;) for mobile devices, created by <strong>Melodeon</strong> (hereby referred to as &quot;Service Provider&quot;) as a free service. This service is intended for use &quot;AS IS&quot;.</p>
-
+    <div class="container">
+        <a class="back" href="index.html">&larr; Melodeon &amp; Makkia</a>
+        <h1>Privacy Policy</h1>
+        <p class="subtitle">Barcode Battle</p>
+        <p class="updated">Effective as of 2026-08-20</p>
+<p>This privacy policy applies to the <strong>Barcode Battle</strong> app (hereby referred to as the &quot;Application&quot;) for mobile devices, created by <strong>Melodeon</strong> (hereby referred to as the &quot;Service Provider&quot;) as a free service. The Application is a game in which scanning a barcode or QR code generates a unique hero that you then use in battle. It is provided for use &quot;AS IS&quot;.</p>
 <h2 id="information-collection-and-use">Information Collection and Use</h2>
-<p>The Application is designed to run primarily offline. However, it may collect and use certain information through integrated third-party services for advertising, player authentication, and operational purposes. </p>
-<p>For a better experience, while using our Application, the Service Provider may require you to provide us with certain personally identifiable information (via third-party SDKs), including but not limited to Android Advertising ID, device identifiers, and gaming profile identifiers.</p>
+<p>Core gameplay runs on your device. The Application does, however, use the device camera, an online leaderboard, and integrated third-party services for advertising, analytics and stability reporting, which collect certain information. Each is described below.</p>
+<p>Through those third-party SDKs, information including your Android Advertising ID, device identifiers and general device and app information (such as device model, operating system version and app version) may be collected.</p>
+<p>The Application uses Firebase Analytics to collect aggregated usage and event data, Firebase Crashlytics to receive crash and error reports, and Firebase Remote Config to adjust settings without an app update. Advertising is served through Google AdMob, which uses Unity Ads as a mediation partner.</p>
 <p>The Application does not use Artificial Intelligence (AI) technologies to process your data or provide features.</p>
 
-<h3>Account Linking and Progress Recovery (Google Play Games Services)</h3>
-<p>The Application integrates Google Play Games Services to support automatic sign-in, account linking, and cross-device game progress recovery. To enable these features seamlessly, the Application utilizes Google's Recall API. This API may share limited end-user device and identity data with Google to look up or establish an account link, even if the user does not have a fully configured or active public Google Play Games Services profile. Users can manage or restrict this data sharing at any time via the official Google Play Games application settings on their device.</p>
+<h3>Camera</h3>
+<p>The Application requests permission to use your device's <strong>camera</strong> for one purpose: reading barcodes and QR codes in order to generate a hero. The camera preview is analysed on your device by Google's ML Kit barcode scanner, which runs entirely offline.</p>
+<p>No photograph or video is recorded, saved or transmitted. Only the decoded value of the scanned code is used, and it is used locally to generate the hero's statistics. You may deny or revoke the camera permission at any time in your device settings; the rest of the Application continues to work, but scanning will be unavailable.</p>
 
-<p>The Application does use third-party services that may collect information used to identify you. Here are the links to the privacy policies of the third-party service providers used by the Application:</p>
+<h3>Online Leaderboard</h3>
+<p>The Application includes an <strong>optional online leaderboard</strong> for boss battles, hosted on Google Firebase (Cloud Firestore) under the Service Provider's Firebase project. This is the one feature where data you provide leaves your device and is stored by the Service Provider.</p>
+<p>When you submit a result, the following is transmitted and stored:</p>
+<ul>
+<li>the <strong>display name</strong> you have chosen in the Application's settings;</li>
+<li>an <strong>anonymous account identifier</strong> created by Firebase Anonymous Authentication &mdash; it is not linked to your Google account, email address or real identity;</li>
+<li>your result for that boss (turns taken, health lost, and the rarity and power of the hero used), and the time of submission.</li>
+</ul>
+<p>Entries submitted to a leaderboard are <strong>publicly visible</strong> to other players of the Application, including the display name you choose. Please do not enter personal information, such as your real name, as a display name. Leaderboard entries are removed automatically once the boss board they belong to expires.</p>
+
+<h3>Purchases</h3>
+<p>The Application offers an optional one-time purchase to remove advertising, processed through Google Play Billing. Payment details are handled entirely by Google Play; the Service Provider never receives or stores your payment information.</p>
+
+<h3>Notifications</h3>
+<p>The Application can send optional daily reminders about your rank and the boss reset. They are scheduled locally on your device and can be turned off at any time in the Application's settings or in your device's notification settings.</p>
+
+<p>The Application uses the third-party services listed below, which may collect information used to identify you. Links to their privacy policies:</p>
 <ul>
 <li><a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener noreferrer">Google Play Services</a></li>
 <li><a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank" rel="noopener noreferrer">Google AdMob</a></li>
-<li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Google Analytics for Firebase</a></li>
+<li><a href="https://unity.com/legal/game-player-and-app-user-privacy-policy" target="_blank" rel="noopener noreferrer">Unity Ads (mediation partner)</a></li>
+<li><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer">Firebase (Analytics, Crashlytics, Remote Config)</a></li>
+<li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Play Billing</a></li>
 </ul>
-
 <h2 id="third-party-access">Third Party Access</h2>
-<p>The Service Provider shares data with third parties exclusively through integrated official SDKs necessary to deliver advertisements and measure app usage. The Application integrates the Google AdMob SDK for advertising purposes and Google Analytics for Firebase for usage analytics and app performance measurement. No other unauthorized tracking tools or data-sharing operations are implemented.</p>
+<p>The Service Provider shares data with third parties only through the official SDKs listed above, which are used to deliver advertisements, measure app usage, report crashes, host the leaderboard and process the optional purchase. No other tracking tools or data-sharing arrangements are implemented, and the Service Provider does not sell your data.</p>
+<p>The Application does <strong>not</strong> integrate Google Play Games Services, and does not link to or read from a Google Play Games profile.</p>
+
+<h2 id="consent-and-ad-personalization">Consent and Ad Personalization</h2>
+<p>Where required by law &mdash; in the European Economic Area, the United Kingdom and Switzerland &mdash; the Application shows a consent message on first launch using Google's User Messaging Platform (UMP) before any personalized advertising data is collected. You choose there whether advertising partners may use your data for personalized ads.</p>
+<p>You can reopen that choice at any time from the Application's settings screen, where a privacy options entry is shown to users in the regions the consent form applies to. Outside those regions the entry is hidden because no consent form applies.</p>
 
 <h2 id="opt-out-rights">Opt-Out Rights</h2>
-<p>You can stop all use of the Application at any time by uninstalling it. You may use the standard uninstall process available on your mobile device or via the mobile application marketplace. You can also disconnect or manage your Google account linking via your device's Google Play Games app settings menu.</p>
+<p>You can stop all use of the Application at any time by uninstalling it, using the standard uninstall process available on your device or through the app marketplace. Uninstalling removes all locally stored data described above.</p><p>You can limit ad personalization or reset your advertising identifier at any time from your device settings (<strong>Settings &rarr; Google &rarr; Ads</strong>), independently of the in-app consent choice above.</p>
+<p>Submitting a score to the online leaderboard is optional; if you do not submit a result, no leaderboard data is stored for you. You can also revoke the camera permission in your device settings at any time.</p>
 
-<h2 id="data-retention-policy">Data Retention Policy</h2>
-<p>The Application does not collect, store, or transmit any user data on its own private servers. Game saves and puzzle progress created within the Application remain on the user's device, or may be securely synced to Google's cloud infrastructure via Google Play Games Services if you choose to utilize cloud features. Information processed by third-party SDKs (like AdMob and Google Play Services) is handled according to their respective privacy policies.</p>
+<h2 id="data-retention-and-deletion">Data Retention and Deletion</h2>
+<p>Your hero collection, game saves and settings remain on your device and are deleted when you uninstall the Application.</p>
+<p>Leaderboard entries are stored in the Service Provider's Firebase project and are deleted automatically when the boss board they belong to expires. If you would like a leaderboard entry removed before then, contact the developer using the details below; because entries are keyed to an anonymous identifier, please describe the display name and board concerned so the entry can be located.</p>
+<p>Information processed by the other third-party services listed above is retained and deleted according to their own privacy policies.</p>
 
 <h2 id="children">Children</h2>
-<p>The Application is a logic puzzle game suitable for all audiences. To comply with advertising policies, the target audience is restricted to users aged 13 and older. The Service Provider does not knowingly collect personally identifiable information from children under the age of 13. If you believe a child has provided personal information, please contact us and it will be promptly addressed.</p>
+<p>The Application is a scanning and battling game suitable for a general audience. Because it displays advertising and offers a public leaderboard, its target audience is set to users aged 13 and older. The Service Provider does not knowingly collect personally identifiable information from children under the age of 13. If you believe a child has provided personal information, please contact us and it will be promptly addressed.</p>
 
 <h2 id="security">Security</h2>
-<p>Since the Application collects no personal data directly on developer-owned servers, there is no personal information at risk on our infrastructure. All local game saves remain under the user's own device security controls, and cloud data is secured by Google's infrastructure.</p>
+<p>Leaderboard data is held in Google Cloud Firestore and protected by Google's infrastructure security and by access rules restricting what the Application may read and write. It contains no contact details, payment information or precise location. All other data remains on your device, under your own device's security controls.</p>
 
 <h2 id="changes">Changes</h2>
-<p>This Privacy Policy may be updated from time to time. The Service Provider will notify users of any changes by updating this page. Continued use of the Application after changes are posted constitutes acceptance of the revised policy.</p>
-<p>This privacy policy is effective as of <strong>2026-06-14</strong>.</p>
+<p>This Privacy Policy may be updated from time to time. The Service Provider will notify users of any changes by updating this page, and the effective date at the top will change accordingly. Continued use of the Application after changes are posted constitutes acceptance of the revised policy.</p>
 
 <h2 id="your-consent">Your Consent</h2>
-<p>By using the Application, you are consenting to this Privacy Policy as amended from time to time.</p>
+<p>By using the Application, you consent to this Privacy Policy as amended from time to time.</p>
 
 <h2 id="contact-us">Contact Us</h2>
-<p>If you have any questions or suggestions about this Privacy Policy, do not hesitate to contact the developer directly through the official Google Play Store developer contact page.</p>
-
+<p>If you have any questions or suggestions about this Privacy Policy, or wish to make a request regarding your data, contact the developer directly through the official Google Play Store developer contact page for Melodeon.</p>
+        <footer>
+            <p>Barcode Battle is developed by Melodeon. This policy covers the Android application only.</p>
+        </footer>
+    </div>
 </body>
 </html>
